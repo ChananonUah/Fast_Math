@@ -51,6 +51,7 @@ function cal(num) {
         count_num -= 1
     }
     else {
+        count = 0
         alert('ERROR!!!')
     }
 
