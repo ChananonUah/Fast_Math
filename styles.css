@@ -42,4 +42,36 @@ button:hover {
     padding: 15px;
     margin: 5px;
     font-size: 1.5em;
-    background
+    background-color: #03dac6;  /* สีของปุ่มตัวเลข */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#show_op {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#show_op div {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+#show_op input[type="button"] {
+    padding: 15px;
+    margin: 5px;
+    font-size: 1.5em;
+    background-color: #ff5722;  /* สีของปุ่มเครื่องหมาย */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="button"]:hover {
+    opacity: 0.9;
+}
