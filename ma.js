@@ -124,4 +124,5 @@ function reset() {
         ans = 0
         code = ""
         count_num = 4
+        fix_err = 0
 }
