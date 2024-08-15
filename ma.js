@@ -64,7 +64,7 @@ function cal(num) {
 function operator(op) {
     if (op == "√") {
         count = 0
-        document.getElementById(`${code}`).value = Math.floor(n ** 1/2)
+        document.getElementById(`${code}`).value = Math.floor(n ** (1/2))
     }
     else if (op == "!") {
         count = 0
