@@ -49,6 +49,7 @@ function cal(num) {
         document.getElementById(`${num}`).remove()
         document.getElementById('show_num').innerHTML += `<input type="button" id="value${k}" value="${ans}" onclick="cal('value${k}')">`
         count_num -= 1
+        fix_err = 0
     }
     else {
         count = 0
@@ -64,7 +65,6 @@ function operator(op) {
     if (op == "√") {
         count = 0
         document.getElementById(`${code}`).value = Math.floor(n ** 1/2)
-        fix_err += 1
     }
     else if (op == "!") {
         count = 0
@@ -73,12 +73,11 @@ function operator(op) {
             fac = fac*i
         }
         document.getElementById(`${code}`).value = Math.floor(fac)
-        fix_err += 1
     }
     else {
         sign = op
+        fix_err ++
     }
-    fix_err += 1
 }
 
 function calculate(n1, n2) {
@@ -100,6 +99,7 @@ function calculate(n1, n2) {
     else {
         alert()
     }
+    fix_err ++
 }
 
 let random_num
