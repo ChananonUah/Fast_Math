@@ -32,14 +32,16 @@ let k = 4
 let ans
 let code
 let count_num = 4
+let fix_err = 0
+
 function cal(num) {
-    if (count == 0) {
+    if (count == 0 && fix_err == 0) {
         n = Number(document.getElementById(`${num}`).value)
         code = num
         id = num
         count += 1
     }
-    else {
+    else if (count != 0 && fix_err != 0) {
         ans = calculate(n, Number(document.getElementById(`${num}`).value))
         count = 0
         k += 1
@@ -47,6 +49,9 @@ function cal(num) {
         document.getElementById(`${num}`).remove()
         document.getElementById('show_num').innerHTML += `<input type="button" id="value${k}" value="${ans}" onclick="cal('value${k}')">`
         count_num -= 1
+    }
+    else {
+        alert('ERROR!!!')
     }
 
     if (ans == random_num && count_num == 1) {
@@ -58,6 +63,7 @@ function operator(op) {
     if (op == "√") {
         count = 0
         document.getElementById(`${code}`).value = Math.floor(n ** 1/2)
+        fix_err ++
     }
     else if (op == "!") {
         count = 0
@@ -66,6 +72,7 @@ function operator(op) {
             fac = fac*i
         }
         document.getElementById(`${code}`).value = Math.floor(fac)
+        fix_err ++
     }
     else {
         sign = op
@@ -91,6 +98,7 @@ function calculate(n1, n2) {
     else {
         alert()
     }
+    fix_err ++
 }
 
 let random_num
