@@ -58,8 +58,6 @@ function cal(num) {
     if (ans == random_num && count_num == 1) {
         alert('PASS')
     }
-    console.log("count :",count)
-    console.log("err",fix_err)
 }
 
 function operator(op) {
@@ -81,8 +79,6 @@ function operator(op) {
         sign = op
     }
     fix_err += 1
-    console.log("count :",count)
-    console.log("err",fix_err)
 }
 
 function calculate(n1, n2) {
