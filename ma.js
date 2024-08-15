@@ -41,7 +41,7 @@ function cal(num) {
         id = num
         count += 1
     }
-    else if (count != 0 && fix_err != 0) {
+    else if (count != 0 && fix_err == 1) {
         ans = calculate(n, Number(document.getElementById(`${num}`).value))
         count = 0
         k += 1
@@ -58,15 +58,15 @@ function cal(num) {
     if (ans == random_num && count_num == 1) {
         alert('PASS')
     }
-    console.log(count)
-    console.log(fix_err)
+    console.log("count :",count)
+    console.log("err",fix_err)
 }
 
 function operator(op) {
     if (op == "√") {
         count = 0
         document.getElementById(`${code}`).value = Math.floor(n ** 1/2)
-        fix_err ++
+        fix_err += 1
     }
     else if (op == "!") {
         count = 0
@@ -75,11 +75,14 @@ function operator(op) {
             fac = fac*i
         }
         document.getElementById(`${code}`).value = Math.floor(fac)
-        fix_err ++
+        fix_err += 1
     }
     else {
         sign = op
     }
+    fix_err += 1
+    console.log("count :",count)
+    console.log("err",fix_err)
 }
 
 function calculate(n1, n2) {
@@ -101,7 +104,6 @@ function calculate(n1, n2) {
     else {
         alert()
     }
-    fix_err ++
 }
 
 let random_num
