@@ -12,14 +12,14 @@ body {
 }
 
 h1 {
-    font-size: 2em;
+    font-size: 2.5em;  /* ขนาดหัวเรื่องใหญ่ขึ้น */
     margin-bottom: 20px;
     color: #333;
 }
 
 button {
-    padding: 10px 20px;
-    font-size: 1.2em;
+    padding: 12px 24px;  /* ขนาดปุ่มใหญ่ขึ้น */
+    font-size: 1.4em;  /* ขนาดตัวอักษรใหญ่ขึ้น */
     margin: 10px;
     border-radius: 5px;
     border: none;
@@ -34,15 +34,15 @@ button:hover {
 }
 
 #show_rand h2 {
-    font-size: 1.5em;
+    font-size: 2em;  /* ขนาดตัวอักษรของผลลัพธ์ใหญ่ขึ้น */
     color: #000;
 }
 
 #show_num input[type="button"] {
-    padding: 15px;
+    padding: 18px;  /* ขนาดปุ่มตัวเลขใหญ่ขึ้น */
     margin: 5px;
-    font-size: 1.5em;
-    background-color: #03dac6;  /* สีของปุ่มตัวเลข */
+    font-size: 1.6em;  /* ขนาดตัวอักษรของปุ่มตัวเลขใหญ่ขึ้น */
+    background-color: #03dac6;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -51,17 +51,17 @@ button:hover {
 
 #show_op {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* กำหนดให้มี 4 คอลัมน์ */
-    gap: 5px; /* ระยะห่างระหว่างปุ่ม */
+    grid-template-columns: repeat(4, 1fr);  /* ยังคงเป็น 4 คอลัมน์ */
+    gap: 2px;  /* ระยะห่างระหว่างปุ่มแนวนอนลดลง */
     justify-items: center;
-    width: 100%; /* ขยายตารางให้เต็มความกว้าง */
-    max-width: 400px; /* กำหนดความกว้างสูงสุด */
+    width: 100%;
+    max-width: 400px;
 }
 
 #show_op input[type="button"] {
-    padding: 15px;
-    font-size: 1.5em;
-    background-color: #ff5722;  /* สีของปุ่มเครื่องหมาย */
+    padding: 18px;  /* ขนาดปุ่มเครื่องหมายใหญ่ขึ้น */
+    font-size: 1.6em;  /* ขนาดตัวอักษรของปุ่มเครื่องหมายใหญ่ขึ้น */
+    background-color: #ff5722;
     color: #fff;
     border: none;
     border-radius: 5px;
