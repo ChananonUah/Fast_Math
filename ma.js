@@ -57,6 +57,8 @@ function cal(num) {
     if (ans == random_num && count_num == 1) {
         alert('PASS')
     }
+    console.log(count)
+    console.log(fix_err)
 }
 
 function operator(op) {
