@@ -52,7 +52,7 @@ button:hover {
 #show_op {
     display: grid;
     grid-template-columns: repeat(4, 1fr);  /* ยังคงเป็น 4 คอลัมน์ */
-    gap: 2px;  /* ระยะห่างระหว่างปุ่มแนวนอนลดลง */
+    gap: 1px;  /* ระยะห่างระหว่างปุ่มทั้งแนวนอนและแนวตั้ง */
     justify-items: center;
     width: 100%;
     max-width: 400px;
@@ -66,6 +66,7 @@ button:hover {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    margin: 0;  /* ไม่มีช่องว่างรอบๆ ปุ่ม */
 }
 
 input[type="button"]:hover {
