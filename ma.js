@@ -13,6 +13,16 @@ function start_game() {
         <input type="button" id="value2" value="${value2}" onclick="cal('value2')">
         <input type="button" id="value3" value="${value3}" onclick="cal('value3')">
         <input type="button" id="value4" value="${value4}" onclick="cal('value4')">`
+
+    n = 0
+    count = 0
+    sign = ""
+    id = ""
+    k = 4
+    ans = 0
+    code = ""
+    count_num = 4
+    fix_err = 0
 }
 
 
@@ -116,13 +126,13 @@ function reset() {
         <input type="button" id="value3" value="${value3}" onclick="cal('value3')">
         <input type="button" id="value4" value="${value4}" onclick="cal('value4')">`
 
-        n = 0
-        count = 0
-        sign = ""
-        id = ""
-        k = 4
-        ans = 0
-        code = ""
-        count_num = 4
-        fix_err = 0
+    n = 0
+    count = 0
+    sign = ""
+    id = ""
+    k = 4
+    ans = 0
+    code = ""
+    count_num = 4
+    fix_err = 0
 }
