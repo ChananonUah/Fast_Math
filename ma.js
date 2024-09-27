@@ -14,6 +14,8 @@ function start_game() {
         <input type="button" id="value3" value="${value3}" onclick="cal('value3')">
         <input type="button" id="value4" value="${value4}" onclick="cal('value4')">`
 
+    document.getElementById('start_but').innerHTML = `NEXT`
+    
     n = 0
     count = 0
     sign = ""
